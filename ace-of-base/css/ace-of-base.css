@@ -1,0 +1,68 @@
+/* SETUP */
+
+@import "meyer-reset.css";
+
+* {
+	box-sizing: border-box;
+}
+
+picture {
+  display: block;
+  /* inline by default (browser's choice) */
+ }
+
+img {
+	display: block; /* it's inline-block by default */
+	width: 100%;
+	height: auto;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+	/* remove default link styles */
+	/* set links to be blocks so you can wrap things */
+
+p a {
+	display: inline;
+	color: blue;
+	text-decoration:underline;
+	/* keep links "normal" inside paragraphs	*/
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.17em;
+}
+
+h4,p,ul,li {font-size: 1em;
+}
+
+h5 {
+	font-size: .83em;
+}
+
+h6 {
+	font-size: .67em;
+}
+
+
+.inner-column {
+	max-width: 72ch;
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
