@@ -82,25 +82,27 @@ h6 {
 
 .background-container {
 	background-image:url(https://images.unsplash.com/photo-1560710990-9f5d4197b5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80;);
-	/*change background image size as screen is resized, rather than repeat image	*/
+	/*change background image size as screen is resized, rather than repeat imagebb	*/
 	background-size: cover;
 	background-position: center;
 }
 
 .intro {
 	background-color: lightblue;
+	color: green;
 }
 
-.green {
+.about {
 	background-color: lightgreen;
 }
 
 footer {
 	background-color: indianred;
+	color: white;
 }
 
 .inner-column {
-	max-width: 1440px;
+	max-width: 72ch;
 	padding: 15px;
 	margin-left: auto;
 	margin-right: auto;
@@ -111,8 +113,18 @@ footer {
 /* IF the viewport is 800px or wider... follow these rules in addition to the other rules */
 
 @media (min-width: 800px) {
-	.intro, .green, footer {
+	.intro, footer {
 		background-color: transparent;
 	}
 }
+
+/* IF the viewport is 800px or smaller... follow these rules in addition to the other rules */
+
+@media (max-width: 800px) {
+	.intro {
+		color: black;
+	}
+}
+
+
 
