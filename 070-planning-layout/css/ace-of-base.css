@@ -1,0 +1,115 @@
+/* SETUP */
+
+@import "meyer-reset.css";
+
+* {
+	box-sizing: border-box;
+}
+
+/*html {
+	background-color: indianred;
+}*/
+
+body {
+
+}
+
+picture {
+  display: block;
+  /* inline by default (browser's choice) */
+ }
+
+img {
+	display: block; /* it's inline-block by default */
+	width: 100%;
+	height: auto;
+}
+
+/* TYPOGRAPHY */
+
+a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+	/* remove default link styles */
+	/* set links to be blocks so you can wrap things */
+
+p a {
+	display: inline;
+	color: blue;
+	text-decoration:underline;
+	/* keep links "normal" inside paragraphs	*/
+}
+
+p {
+	line-height: 1.7em;
+}
+
+p + p {
+	margin-top: 1.7em;
+}
+
+h1 + p {
+	margin-top: 1.7em;
+}
+
+h1 {
+	font-size: 32px;
+	font-family: sans-serif;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.17em;
+}
+
+h4,p,ul,li {font-size: 1em;
+}
+
+h5 {
+	font-size: .83em;
+}
+
+h6 {
+	font-size: .67em;
+}
+
+/* SITE SECTION */
+
+.background-container {
+	background-image:url(https://images.unsplash.com/photo-1560710990-9f5d4197b5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80;);
+}
+
+.intro {
+	background-color: lightblue;
+}
+
+.green {
+	background-color: lightgreen;
+}
+
+footer {
+	background-color: indianred;
+}
+
+.inner-column {
+	max-width: 1440px;
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid blue;
+}
+
+
+/* IF the viewport is 800px or wider... follow these rules in addition to the other rules */
+
+@media (min-width: 800px) {
+	.intro, .green, footer {
+		background-color: transparent;
+	}
+}
+
