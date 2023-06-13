@@ -11,7 +11,9 @@
 }*/
 
 body {
-
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 picture {
@@ -36,7 +38,7 @@ a {
 	/* set links to be blocks so you can wrap things */
 
 p a {
-	display: inline;
+	display: inline;S
 	color: blue;
 	text-decoration:underline;
 	/* keep links "normal" inside paragraphs	*/
@@ -80,24 +82,33 @@ h6 {
 
 /* SITE SECTION */
 
+.site-header {
+	background-color: lightblue;
+	position: sticky;
+	top: 0;
+}
+
 .background-container {
 	background-image:url(https://images.unsplash.com/photo-1560710990-9f5d4197b5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80;);
-	/*change background image size as screen is resized, rather than repeat imagebb	*/
+	/*change background image size as screen is resized, rather than repeat image	*/
 	background-size: cover;
 	background-position: center;
+	flex-grow: 1;
 }
 
 .intro {
-	background-color: lightblue;
-	color: green;
+/*	background-color: lightblue;*/
+	color: black;
+/*	text-shadow: -2px 2px 0 black;*/
 }
 
 .about {
-	background-color: lightgreen;
+/*	background-color: lightgreen;*/
+	background-color: lightblue;
 }
 
-footer {
-	background-color: indianred;
+.contact {
+/*	background-color: indianred;*/
 	color: white;
 }
 
@@ -109,11 +120,20 @@ footer {
 	border: 3px solid blue;
 }
 
+.site-footer {
+	background-color: gray;
+	color: white;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+
+}
+
 
 /* IF the viewport is 800px or wider... follow these rules in addition to the other rules */
 
 @media (min-width: 800px) {
-	.intro, footer {
+	.intro, .contact {
 		background-color: transparent;
 	}
 }
