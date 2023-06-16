@@ -1,0 +1,82 @@
+@import 'meyer-reset.css';
+
+* {
+	padding-left: 20px;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+	
+/*header{
+	padding-left: 20px;
+	font-family: sans-serif;
+	text-align: center;
+}*/
+
+h1{
+	font-size: 32pt;
+}
+
+h2{
+	font-size: 16pt;
+}
+
+h3{
+	font-size: 14pt;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 1.4;
+}
+	
+footer{
+	padding-left: 20px;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+nav{
+	padding-bottom: 20px;
+	padding-top: 10px;
+	word-spacing: 20px;
+	font-size: 16pt;
+}
+
+section {
+	max-width: 75ch;
+}
+
+h1 + h2 {
+	padding-top: 10px;
+}
+
+strong { 
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: square;
+	list-style-position: inside;
+	margin-top: 5px;
+	line-height: 1.4;
+}
+
+li + li {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.inner-column {
+	width: 100%;
+	max-width: 98%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid blue;
+}
+
+.construction {
+	padding-top: 10px;
+}
