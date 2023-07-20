@@ -1,0 +1,95 @@
+/* SETUP */
+
+@import "meyer-reset.css";
+
+* {
+	box-sizing: border-box;
+}
+
+/* STRUCTURE */
+body {
+	background-color: #f1e5b5;
+	margin: 10px;
+	line-height: 1.4;
+	font-family: arial,helvetica,sans-serif;
+
+}
+
+header {
+	
+}
+
+h1 {
+	font-size: 32px;
+	color: #b4211a;
+}
+
+h2 {
+	font-size: 24px;
+	color: #b4211a;
+}
+
+h3 {
+	font-size: 18.72px;
+	color: #b4211a;
+}
+
+h4 {
+	font-size: 1em;
+	color: #b4211a;
+	margin-top: .5em;
+}
+
+p {
+	font-size: 1em;
+	max-width: 60ch;
+	margin-top: .5em;
+	color: #1c2230;
+}
+
+em {
+	font-size: inherit;
+	font-style:italic;
+}
+
+strong {
+	font-size: inherit;
+  font-weight: bold;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+kicker {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+ul {
+	list-style-position: inside;
+	list-style-type: square;
+	font-size: 1em;
+	margin-top: .5em;
+	color: #1c2230;
+}
+
+li {
+	margin-top: .5em;
+}
+
+.inner-column {
+	width: 100%; /* default for block-level elements */
+	max-width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+}
+
+.pull-right {
+	float: right;
+}
+
+.column-1-2 {
+	width: 10%;
+}

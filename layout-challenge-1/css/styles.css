@@ -1,0 +1,232 @@
+/* SETUP */
+
+@import "meyer-reset.css";
+
+* {
+	box-sizing: border-box;
+}
+
+/*html {
+	background-color: rgba(159, 90, 253, 1);
+}*/
+
+/* colors */
+/*.top-banner, .choices {
+	background-color: rgba(213, 184, 255, 1);
+}
+	footer {
+	background-color: rgba(90, 34, 139, 1);
+}*/
+
+picture, .logo {
+  display: block;
+  /* inline by default (browser's choice) */
+ }
+
+img {
+ /* it's inline-block by default */
+ 	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+a {
+	display: inline;
+	text-decoration: underline;
+	color: inherit;
+}
+	/* remove default link styles */
+	/* set links to be blocks so you can wrap things */
+
+p a {
+	display: inline;
+	color: blue;
+	text-decoration:underline;
+	/* keep links "normal" inside paragraphs	*/
+}
+
+h1 {
+	font-size: 26px;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.17em;
+}
+
+h4,p,ul,li {font-size: 1em;
+}
+
+h5 {
+	font-size: .83em;
+}
+
+h6 {
+	font-size: .67em;
+}
+
+/* dev borders */
+
+body * {
+	border: 1px solid black;
+}
+
+body > * {
+	border: 5px solid lightblue;
+}
+
+section {
+	border: 3px solid green;
+}
+
+/* structure */
+
+.inner-column {
+	border: 3px solid gray;
+}
+
+body {
+	border: 5px solid red;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.page-content {
+	flex-grow: 1;
+	/* must do this for sticky footer	*/
+}
+
+
+/* positioning */
+
+.inner-column {
+	width: 100%;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+
+.site-header .inner-column {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+}
+
+.site-header .logo {
+	max-width: 120px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.welcome .inner-column {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+@media (min-width: 600px) {
+	.welcome .inner-column {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.welcome picture, .welcome h1 {
+		flex-basis: 50%;
+	}
+}
+
+@media (min-width: 900px) {
+	.welcome .inner-column {
+		align-items: start;
+	}
+}
+
+	.about .inner-column {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		flex-basis: 33%;
+	}
+
+@media (min-width: 600px) {
+	.about .inner-column {
+		flex-direction: row;
+	}
+	.about .thing {
+		flex-basis: 33%;
+	}
+}
+
+.about .thing picture {
+	max-width: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.about .inner-column {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+@media (min-width: 600px) {
+	.about .inner-column {
+		flex-direction: row;
+	}
+
+}
+
+.about .thing {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.site-footer .inner-column {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+@media (min-width: 600px) {
+	.site-footer .inner-column {
+		flex-direction: row;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,295 @@
+/* SETUP */
+
+@import "meyer-reset.css";
+
+* {
+	box-sizing: border-box;
+}
+
+picture {
+  display: block;
+  /* inline by default (browser's choice) */
+ }
+
+img {
+	display: block; /* it's inline-block by default */
+	width: 100%;
+	height: auto;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+	/* remove default link styles */
+	/* set links to be blocks so you can wrap things */
+
+p a {
+	display: inline;
+	color: blue;
+	text-decoration:underline;
+	/* keep links "normal" inside paragraphs	*/
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.17em;
+}
+
+h4,p,ul,li {font-size: 1em;
+}
+
+h5 {
+	font-size: .83em;
+}
+
+h6 {
+	font-size: .67em;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+/* dev boxes */
+
+body * {
+/*	border: 1px solid blue;*/
+/*	padding: 3px;*/
+}
+
+/*body {
+	border: 3px solid green;
+}*/
+
+/* components */
+
+.inner-column {
+	max-width: 700px;
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+/* HEADER SECTION */
+
+.site-header {
+	background-color: rgb(239, 239, 239);
+	z-index: 5;
+	position: sticky;
+	top: 0;
+}
+
+.logo1, .logo2 {
+	max-width: 30px;
+}
+
+/* MAIN */
+
+.page-content {
+	background-color: rgb(255, 0, 102);
+}
+
+
+
+
+
+
+
+/* WELCOME SECTION */
+
+.welcome {
+	background-color: rgb(255, 191, 203);
+}
+
+.welcome .inner-column {
+	position: relative;
+	border: 1px solid;
+}
+
+.welcome .circle {
+	width: 25%; 
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
+
+	opacity: .3;
+	
+}
+
+.welcome h1 {
+	margin-top: 10px;
+}
+
+graphic-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+graphic-main {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+
+	margin-top: 40px;
+	margin-bottom: 60px;
+	position: relative;
+}
+
+.button {
+	background-color: rgb(255, 0, 102);
+	color: white;
+	text-transform: upper-case;
+	padding: .8em 2em;
+	border-radius: 1.5em;
+	font-size: 1rem;
+	min-width: 12em;
+	text-align: center;
+}
+
+graphic-text .button {
+	margin-top: 1em;
+}
+
+/* screen 2 welcome */
+@media (min-width:600px){
+	.main-image {
+		width: 575px;
+	}
+}
+
+/* screen 3 welcome */
+@media (min-width:800px){
+	graphic-main {
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+
+	.main-image {
+		width:;
+	}
+}
+
+/* screen 4 welcome */
+@media (min-width:1000px){
+	graphic-main {
+		flex-direction: row;
+		align-items: start;
+	}
+}
+
+
+
+
+
+
+/* ABOUT SECTION */
+
+.about {
+	background-color: rgb(255, 0, 102);
+}
+
+.about .inner-column {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	background-color: rgb(255, 0, 102);
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+
+.article-card {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding: 15px;
+	background-color: rgb(255, 191, 203);
+	border: 1px solid blue;
+}
+
+
+/* screen 2 about */
+@media (min-width:600px){
+	.article-card {
+		flex-direction: row;
+	}
+
+	.article-card .about-image, .article-card h2 {
+		width: 50%;
+	}
+}
+
+
+/* screen 3 about */
+
+@media (min-width:800px){
+	.about .inner-column {
+		flex-direction: row;
+	}
+
+	.article-card {
+		flex-direction: column;
+	}
+
+	.article-card .about-image, .article-card h2 {
+		width: 100%;
+	}	
+}
+
+/* screen 4 about */
+
+@media (min-width:1000px) {
+	.article-card {
+		flex-direction: row;
+		background-color: transparent;
+		border: 1px solid blue;
+		padding: 0px;
+	}
+
+	.article-card h2 {
+		background-color: rgb(255, 191, 203);
+		padding: 15px;
+	}
+
+}
+
+
+
+
+
+
+
+/* FOOTER */
+.page-content {
+	flex-grow: 1;
+	/* must do this for sticky footer	*/
+}
+
+.site-footer {
+	background-color: black;
+}
+
+
+
+
+
+
+
+
