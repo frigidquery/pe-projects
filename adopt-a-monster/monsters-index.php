@@ -1,4 +1,4 @@
-<?php include ("../adopt-a-monster/monsters-data.php");
+<?php include ("monsters-data.php");
 
 // echo $monsterdata[0]["id"];
 
