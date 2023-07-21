@@ -48,6 +48,10 @@ if (isset($_POST["submitted"])){
 	$tax = $sub * .055;
 	$total = $sub + $tax;
 
+	$sub = round($sub, 2);
+	$tax = round($tax, 2); 
+	$total = round($total, 2);
+
 	$output = 
 
 	"<h3>Item 1</h3>
