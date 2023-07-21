@@ -109,19 +109,19 @@ if (isset($_POST["submitted"])){
 
 			<div class="input-boxes">
 				<label>How much is item 1?</label>
-				<input type="number" name="item1Cost" required>
+				<input type="number" name="item1Cost" step = ".01" required>
 
 				<label>How many are you buying?</label>
 				<input type="number" name="item1Quant" required>
 
 				<label>How much is item 2?</label>
-				<input type="number" name="item2Cost" required>
+				<input type="number" name="item2Cost" step = ".01" required>
 
 				<label>How many are you buying?</label>
 				<input type="number" name="item2Quant" required>
 
 				<label>How much is item 3?</label>
-				<input type="number" name="item3Cost" required>
+				<input type="number" name="item3Cost" step = ".01" required>
 
 				<label>How many are you buying?</label>
 				<input type="number" name="item3Quant" required>
