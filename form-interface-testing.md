@@ -46,3 +46,20 @@ A couple improvements that jumped out at me:
 
 **Hunter**
 
+Hunter's links are broken so I didn't get a chance to do any review. 
+
+**Max**
+Forms were easy to find. Adding some styling to the "Forms" hyperlink would help to make it more obvious it can be clicked. 
+
+All forms are the same basic look which isn't bad. May want to put some space between the boxes on the room form. It also looks like the room form may benefit from the step attritube. Right now can only input whole numbers. For counting characters I didn't like how the cursor starts in the middle of the form. All that space around it doesn't feel right. 
+
+**Ad**
+The forms are easy to find under code section. They aren't explicitly labelled as forms, just as programming exercises, which may be a good idea. 
+
+For character counts "Your string" isn't a very invitation to use the counter. Could probably get rid of that text altogether or make it funny/welcoming. I'm also thinkinkg the initial size of the text area should be larger. Feels like everything is squeezed to the top of the page. I like how it repeats the input to you below the form. 
+
+The paint form could maybe benefit by allowing half feet instead of just whole numbers. But I get that may be weird to do when there is also an input for inches. The square feet calculation may look better with the round function applied. Since the gallons output is always a whole number it may help to tell the user what logic it is using to do that. 
+
+
+
+
