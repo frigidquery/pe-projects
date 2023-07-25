@@ -1,6 +1,28 @@
+<?php include("infomercial-data.php"); ?>
+
 <h2>Infomercials</h2>
 
 <ul>
+	<?php foreach ($info_data as $item) { ?>
+		<?php
+			$price = "$" . number_format($item["price"], 2, ".", ",");
+		?>
+		<li class="product">
+			<product-card>
+				<h3 class="product">Product: <?=$item["product"]?></h3>
+				<h3 class="product-type">Product type: <?=$item["product-type"]?></h3>
+				<h3 class="price">Price: <?=$price?></h3>
+				<h3 class="spokesperson">Spokesperson: <?=$item["spokesperson"]?></h3>
+				<h3 class="funny-scale">Funny Scale: <?=$item["funny-scale"]?></h3>
+				<a href="?page=details">Read more about <?=$item["product"]?></a>
+			</product-card>
+		</li>
+	<?php } ?>
+</ul>
+
+<!-- Commented out manual list items, because instead of that we can use a foreach loop and infomericial-data.php to automate the list items -->
+
+<!-- <ul>
 	<li class="product">
 		<product-card>
 			<h3 class="name">George Foreman Grill</h3>
@@ -30,4 +52,4 @@
 			<a href="?page=details">Check it out!</a>
 		</product-card>
 	</li>
-</ul>
+</ul> -->

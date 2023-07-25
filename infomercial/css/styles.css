@@ -71,6 +71,7 @@ body {
 product-card {
 	display: block;
 	padding: 10px;
+	line-height: 1.7;
 }
 
 /*any product precede by a product gets margin*/
