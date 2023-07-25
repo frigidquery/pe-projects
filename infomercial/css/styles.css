@@ -17,10 +17,11 @@ img {
 	height: auto;
 }
 
-a {
+nav a {
 	display: inline;
 	text-decoration: underline;
 	color: inherit;
+	padding: 10px;
 }
 	/* remove default link styles */
 	/* set links to be blocks so you can wrap things */
@@ -61,6 +62,10 @@ h6 {
 	padding: 15px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+body {
+	background-color: darkseagreen;
 }
 
 

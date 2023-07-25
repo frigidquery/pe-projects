@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Infomercials</title>
-	<meta name="Sprocket Heaven" content="Buy Stuff">
+	<meta name="Infomercials" content="Buy Stuff">
 
 	<meta property="og:image" content="https://peprojects.dev/alpha-7/joseph/images/blank.png">
 	<meta property="og:type" content="website">
@@ -15,13 +15,13 @@
 </head>
 
 <?php
-
+	
+	// router //
 	$page = null;
-
 	if (isset($_GET["page"]) ) {
-		$page = $_GET["page"];
+		$page = $_GET["page"]; //url?page=string
 	} else {
-		$page = "home";
+		$page = "home"; //default to home
 	}
 
 
@@ -41,24 +41,13 @@
 
 <main class="page-content">
 
-	<section class="home">
 		<div class="inner-column">
-
-			<p><?=$page?> page.</p>
 
 			<?php
 				if ($page == "home") {
 					include("home.php");
 				}
-			?>
 
-		</div>
-	</section>
-
-	<section class="list">
-		<div class="inner-column">
-
-			<?php
 				if ($page == "list") {
 					include("list.php");
 				}
@@ -71,7 +60,7 @@
 
 <footer class="site-footer">
 	<div class="inner-column">
-		footer
+		<!-- footer -->
 	</div>
 </footer>
 </body>
