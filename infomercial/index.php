@@ -32,7 +32,7 @@
 
 <header class="site-header">
 	<div class="inner-column">
-		<h1>Excellent Products - As Seen on TV</h1>
+		<h1>Infomercials That Amuse Me - As Seen on TV</h1>
 
 		<?php include("site-menu.php"); ?>
 
@@ -50,6 +50,10 @@
 
 				if ($page == "list") {
 					include("list.php");
+				}
+
+				if ($page == "details") {
+					include("details.php");
 				}
 			?>
 
