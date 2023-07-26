@@ -79,6 +79,10 @@ product-card {
 	margin-top: 30px;
 }
 
+picture + p {
+	margin-top: 30px;
+}
+
 
 
 
