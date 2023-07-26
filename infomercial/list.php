@@ -14,7 +14,7 @@
 				<h3 class="price">Price: <?=$price?></h3>
 				<h3 class="spokesperson">Spokesperson: <?=$item["spokesperson"]?></h3>
 				<h3 class="funny-scale">Funny Scale: <?=$item["funny-scale"]?></h3>
-				<a href="?page=details">Read more about <?=$item["product"]?></a>
+				<a href="?page=details&id=<?=$item["id"]?>">Read more about <?=$item["product"]?></a>
 			</product-card>
 		</li>
 	<?php } ?>
