@@ -1,8 +1,6 @@
 <?php include("infomercial-data.php"); ?>
 
-<h2>Infomercials</h2>
-
-<ul>
+<ul class="flex-test">
 	<?php foreach ($info_data as $item) { ?>
 		<?php
 			$price = "$" . number_format($item["price"], 2, ".", ",");
@@ -19,6 +17,24 @@
 		</li>
 	<?php } ?>
 </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Commented out manual list items, because instead of that we can use a foreach loop and infomericial-data.php to automate the list items -->
 

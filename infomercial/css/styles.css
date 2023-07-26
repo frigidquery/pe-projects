@@ -26,6 +26,10 @@ nav a {
 	/* remove default link styles */
 	/* set links to be blocks so you can wrap things */
 
+p {
+	margin-top: 2;
+}
+
 p a {
 	display: inline;
 	color: blue;
@@ -66,6 +70,8 @@ h6 {
 
 body {
 	background-color: darkseagreen;
+	font-family: courier;
+	line-height: 2em;
 }
 
 product-card {
@@ -74,13 +80,44 @@ product-card {
 	line-height: 1.7;
 }
 
-/*any product precede by a product gets margin*/
+/*any product preceded by a product gets margin*/
 .product + .product {
 	margin-top: 30px;
 }
 
 picture + p {
 	margin-top: 30px;
+}
+
+/*form*/
+
+.input-boxes {
+	display:	flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 400px;
+}
+
+button {
+	border-radius: 12px;
+	padding: 10px;
+	margin-top: 20px;
+	background-color: indianred;
+	font-size: 20px;
+}
+
+/*display each item in list loop as flex/row*/
+
+.flex-test {
+	display: flex;
+	flex-direction: column;
+
+}
+
+/*colors*/
+.site-header {
+	background-color: goldenrod;
+	border: 5px dotted red;
 }
 
 

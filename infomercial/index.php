@@ -32,7 +32,7 @@
 
 <header class="site-header">
 	<div class="inner-column">
-		<h1>Infomercials That Amuse Me - As Seen on TV</h1>
+		<h1>Infomercials That Amuse Me -<br> As Seen on TV</h1>
 
 		<?php include("site-menu.php"); ?>
 
@@ -54,6 +54,9 @@
 
 				if ($page == "details") {
 					include("details.php");
+				}
+				if ($page == "create") {
+					include("create.php");
 				}
 			?>
 
