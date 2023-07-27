@@ -1,7 +1,7 @@
 	<div class="inner-column">
 		<form method = "POST">
 
-			<a href="?"><h1>Add an infomercial</h1></a>
+			<a href="?page=create"><h1>Add an infomercial</h1></a>
 
 			<div class="input-boxes">
 				<label>What is the product?</label>
