@@ -27,7 +27,7 @@ nav a {
 	/* set links to be blocks so you can wrap things */
 
 p {
-	margin-top: 2;
+	margin-top: 25px;
 }
 
 p a {
@@ -69,15 +69,19 @@ h6 {
 }
 
 body {
-	background-color: darkseagreen;
+	background-color: #FFA500;
 	font-family: courier;
 	line-height: 2em;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 product-card {
 	display: block;
 	padding: 10px;
 	line-height: 1.7;
+	border: 5px solid white;
 }
 
 /*any product preceded by a product gets margin*/
@@ -108,16 +112,29 @@ button {
 
 /*display each item in list loop as flex/row*/
 
-.flex-test {
-	display: flex;
-	flex-direction: column;
 
-}
 
 /*colors*/
 .site-header {
-	background-color: goldenrod;
-	border: 5px dotted red;
+	background-color: #007BFF;
+	border: 5px solid #FFFFFF;
+}
+
+.site-footer {
+	background-color: #007BFF;
+	border: 5px solid #FFFFFF;
+}
+
+body {
+	background-color: #FFA500;
+}
+
+
+
+/* FOOTER */
+.page-content {
+	flex-grow: 1;
+	/* must do this for sticky footer	*/
 }
 
 

@@ -1,5 +1,7 @@
 <?php include("infomercial-data.php"); ?>
 
+<h1>The Infomercials</h1>
+
 <ul class="flex-test">
 	<?php foreach ($info_data as $item) { ?>
 		<?php
@@ -7,12 +9,12 @@
 		?>
 		<li class="product">
 			<product-card>
-				<h3 class="product">Product: <?=$item["product"]?></h3>
-				<h3 class="product-type">Product type: <?=$item["product-type"]?></h3>
-				<h3 class="price">Price: <?=$price?></h3>
-				<h3 class="spokesperson">Spokesperson: <?=$item["spokesperson"]?></h3>
-				<h3 class="funny-scale">Funny Scale: <?=$item["funny-scale"]?></h3>
-				<a href="?page=details&id=<?=$item["id"]?>">Read more about <?=$item["product"]?></a>
+				<h3 class="product"><?=$item["product"]?></h3>
+				<p class="product-type">Product type: <?=$item["product-type"]?></p>
+				<p class="price">Price: <?=$price?></p>
+				<p class="spokesperson">Spokesperson: <?=$item["spokesperson"]?></p>
+				<p class="funny-scale">Funny Scale: <?=$item["funny-scale"]?></p>
+				<a href="?page=details&id=<?=$item["id"]?>"><p>Read more about <?=$item["product"]?></p></a>
 			</product-card>
 		</li>
 	<?php } ?>

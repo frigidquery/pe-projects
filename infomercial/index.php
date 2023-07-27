@@ -28,48 +28,47 @@
 ?>
 
 <body>
-
-
-<header class="site-header">
-	<div class="inner-column">
-		<h1>Infomercials That Amuse Me -<br> As Seen on TV</h1>
-
-		<?php include("site-menu.php"); ?>
-
-	</div>
-</header>
-
-<main class="page-content">
-
+	<header class="site-header">
 		<div class="inner-column">
 
-			<?php
-				if ($page == "home") {
-					include("home.php");
-				}
-
-				if ($page == "list") {
-					include("list.php");
-				}
-
-				if ($page == "details") {
-					include("details.php");
-				}
-				if ($page == "create") {
-					include("create.php");
-				}
-			?>
+			<h1>Infomercials That Amuse Me -<br> As Seen on TV</h1>
+			<?php include("site-menu.php"); ?>
 
 		</div>
-	</section>
-</main>
+	</header>
+	<main class="page-content">
 
+		<section class="guts">
+			<div class="inner-column">
 
-<footer class="site-footer">
-	<div class="inner-column">
-		<!-- footer -->
-	</div>
-</footer>
+				<?php
+					if ($page == "home") {
+						include("home.php");
+					}
+
+					if ($page == "list") {
+						include("list.php");
+					}
+
+					if ($page == "details") {
+						include("details.php");
+					}
+					if ($page == "create") {
+						include("create.php");
+					}
+				?>
+			</div>
+		</section>
+	</main>
+	<footer class="site-footer">
+		<div class="inner-column">
+			
+			<nav class="site-menu">
+				<a href="?page=home">Home</a>
+				<a href="?page=list">Infomercials</a>
+				<a href="?page=create">Add your own</a>
+			</nav>
+		
+	</footer>
 </body>
-
 </html>
