@@ -141,7 +141,7 @@ button {
 	padding: 10px;
 	margin-top: 20px;
 	background-color: indianred;
-	font-size: 20px;
+	font-size: 15px;
 }
 
 .title {
@@ -172,9 +172,18 @@ body {
 
 nav a.active {
 	background-color: indianred;
+	border-radius: 12px;
 
 }
 
+.product-stats a {
+	background-color: indianred;
+	border-radius: 12px;
+	text-decoration: none;
+	padding: 10px;
+	text-align: center;
+	font-size: 15px;
+}
 
 
 /* FOOTER */
