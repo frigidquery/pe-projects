@@ -1,27 +1,32 @@
 <section class = "list">
 	<div class = "inner-column">
 
-		<?php include("infomercial-data.php"); ?>
+		<?php include("infomercial-data.php");
+		 ?>
 
 		<h1>The Infomercials</h1>
 
-		<ul class="flex-test">
 			<?php foreach ($info_data as $item) { ?>
 				<?php
 					$price = "$" . number_format($item["price"], 2, ".", ",");
 				?>
-				<li class="product">
+				<div class="product">
 					<product-card>
-						<h3 class="product"><?=$item["product"]?></h3>
-						<p class="productType">Product type: <?=$item["productType"]?></p>
-						<p class="price">Price: <?=$price?></p>
-						<p class="spokesperson">Spokesperson: <?=$item["spokesperson"]?></p>
-						<p class="funnyScale">Funny Scale: <?=$item["funnyScale"]?></p>
-						<a href="?page=details&id=<?=$item["id"]?>"><p>Read more about <?=$item["product"]?></p></a>
+						<div class="product-image">
+							<img src= "<?=$item["image"]?>" style="width:300px;height:300px;">
+						</div>
+
+						<div class="product-stats">
+							<h3 class="product"><?=$item["product"]?></h3>
+							<p class="productType">Product type: <?=$item["productType"]?></p>
+							<p class="price">Price: <?=$price?></p>
+							<p class="spokesperson">Spokesperson: <?=$item["spokesperson"]?></p>
+							<p class="funnyScale">Funny Scale: <?=$item["funnyScale"]?></p>
+							<a href="?page=details&id=<?=$item["id"]?>"><p>Read more about <?=$item["product"]?></p></a>
+						</div>
 					</product-card>
-				</li>
+				</div>
 			<?php } ?>
-		</ul>
 	</div>
 </section>
 

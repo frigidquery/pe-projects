@@ -13,8 +13,7 @@ picture {
 
 img {
 	display: block; /* it's inline-block by default */
-	width: 100%;
-	height: auto;
+ 
 }
 
 nav a {
@@ -82,6 +81,25 @@ product-card {
 	padding: 10px;
 	line-height: 1.7;
 	border: 5px solid white;
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	justify-content: center;
+}
+
+.product-stats {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	justify-content: center;
+}
+
+.details .inner-column {
+	display: flex;
+	flex-direction: column;
+/*	justify-content: center;*/
+	align-items: center;
+	gap: 5px;
 }
 
 /*any product preceded by a product gets margin*/
@@ -93,6 +111,12 @@ picture + p {
 	margin-top: 30px;
 }
 
+.home {
+	background-image: url("https://peprojects.dev/alpha-7/joseph/infomercial/images/flowbee.jpg");
+	background-position: center;
+	/*cover stop it from repeating the image	*/
+	background-size: cover;
+}
 /*form*/
 
 .input-boxes {
@@ -136,9 +160,9 @@ body {
 	font-weight: bold;
 }
 
-nav a {
+nav a.active {
 	background-color: indianred;
-	border-radius: 12px;
+
 }
 
 
