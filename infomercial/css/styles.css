@@ -111,11 +111,15 @@ picture + p {
 	margin-top: 30px;
 }
 
-.home {
-	background-image: url("https://peprojects.dev/alpha-7/joseph/infomercial/images/flowbee.jpg");
+.home{
+	background-image: url("https://peprojects.dev/alpha-7/joseph/infomercial/images/info-background.jpg");
 	background-position: center;
 	/*cover stop it from repeating the image	*/
 	background-size: cover;
+	flex-grow: 1;
+	border: 3px solid red;
+	height: 100vh;
+
 }
 /*form*/
 
