@@ -38,9 +38,6 @@
 	</header>
 	<main class="page-content">
 
-		<section class="guts">
-			<div class="inner-column">
-
 				<?php
 					if ($page == "home") {
 						include("home.php");
@@ -57,8 +54,6 @@
 						include("create.php");
 					}
 				?>
-			</div>
-		</section>
 	</main>
 	<footer class="site-footer">
 		<div class="inner-column">

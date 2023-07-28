@@ -1,31 +1,29 @@
-<?php include("infomercial-data.php"); ?>
+<section class = "list">
+	<div class = "inner-column">
 
-<h1>The Infomercials</h1>
+		<?php include("infomercial-data.php"); ?>
 
-<ul class="flex-test">
-	<?php foreach ($info_data as $item) { ?>
-		<?php
-			$price = "$" . number_format($item["price"], 2, ".", ",");
-		?>
-		<li class="product">
-			<product-card>
-				<h3 class="product"><?=$item["product"]?></h3>
-				<p class="product-type">Product type: <?=$item["product-type"]?></p>
-				<p class="price">Price: <?=$price?></p>
-				<p class="spokesperson">Spokesperson: <?=$item["spokesperson"]?></p>
-				<p class="funny-scale">Funny Scale: <?=$item["funny-scale"]?></p>
-				<a href="?page=details&id=<?=$item["id"]?>"><p>Read more about <?=$item["product"]?></p></a>
-			</product-card>
-		</li>
-	<?php } ?>
-</ul>
+		<h1>The Infomercials</h1>
 
-
-
-
-
-
-
+		<ul class="flex-test">
+			<?php foreach ($info_data as $item) { ?>
+				<?php
+					$price = "$" . number_format($item["price"], 2, ".", ",");
+				?>
+				<li class="product">
+					<product-card>
+						<h3 class="product"><?=$item["product"]?></h3>
+						<p class="productType">Product type: <?=$item["productType"]?></p>
+						<p class="price">Price: <?=$price?></p>
+						<p class="spokesperson">Spokesperson: <?=$item["spokesperson"]?></p>
+						<p class="funnyScale">Funny Scale: <?=$item["funnyScale"]?></p>
+						<a href="?page=details&id=<?=$item["id"]?>"><p>Read more about <?=$item["product"]?></p></a>
+					</product-card>
+				</li>
+			<?php } ?>
+		</ul>
+	</div>
+</section>
 
 
 

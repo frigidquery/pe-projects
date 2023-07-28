@@ -1,3 +1,7 @@
+<section class = "details">
+	<div class = "inner-column">
+
+
 <?php include("infomercial-data.php"); ?>
 
 <?php
@@ -32,3 +36,6 @@
 	<h2>No item found.</h2>
 
 <?php } ?>
+
+	</div>
+</section>

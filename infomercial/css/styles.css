@@ -26,7 +26,7 @@ nav a {
 	/* remove default link styles */
 	/* set links to be blocks so you can wrap things */
 
-p {
+.home .inner-column p {
 	margin-top: 25px;
 }
 
@@ -127,6 +127,11 @@ button {
 
 body {
 	background-color: #FFA500;
+}
+
+.error {
+	color: red;
+	font-weight: bold;
 }
 
 
