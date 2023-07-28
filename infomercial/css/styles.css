@@ -110,7 +110,9 @@ button {
 	font-size: 20px;
 }
 
-/*display each item in list loop as flex/row*/
+.title {
+	margin-bottom: 10px;
+}
 
 
 
@@ -132,6 +134,11 @@ body {
 .error {
 	color: red;
 	font-weight: bold;
+}
+
+nav a {
+	background-color: indianred;
+	border-radius: 12px;
 }
 
 
