@@ -13,6 +13,8 @@ picture {
 
 img {
 	display: block; /* it's inline-block by default */
+	width: 100%;
+	height: auto;
  
 }
 
