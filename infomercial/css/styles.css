@@ -112,7 +112,7 @@ picture + p {
 }
 
 .home{
-	background-image: url("https://peprojects.dev/alpha-7/joseph/infomercial/images/info-background.jpg");
+	background-image: url("https://peprojects.dev/alpha-7/joseph/infomercial/images/blue.jpg");
 	background-position: center;
 	/*cover stop it from repeating the image	*/
 	background-size: cover;
