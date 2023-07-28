@@ -29,7 +29,7 @@
 		<div class="title-pic">
 			<h2><?=$detail["product"]?></h2>
 			<picture>
-				<img src= "<?=$detail["image"]?>" style="width:300px;height:300px;">
+				<img src= "<?=$detail["image"]?>">
 			</picture>
 		</div>
 

@@ -13,7 +13,7 @@
 				<div class="product">
 					<product-card>
 						<div class="product-image">
-							<img src= "<?=$item["image"]?>" style="width:300px;height:300px;">
+							<img src= "<?=$item["image"]?>">
 						</div>
 
 						<div class="product-stats">

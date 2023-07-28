@@ -8,6 +8,8 @@
 
 picture {
   display: block;
+  width: 100%;
+	height: auto;
   /* inline by default (browser's choice) */
  }
 
