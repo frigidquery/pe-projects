@@ -91,7 +91,7 @@
 
 				if ($hasProd && $hasType && $hasPrice && $hasSpoke && $hasFun) {
 					$id = mt_rand(100, 10000);
-					$infoArray["id"] = $id;
+					$infoArray["id"] = "$id";
 					// encode $infoArray to json
 					$infoJson = json_encode($infoArray);
 				}
@@ -135,11 +135,11 @@
 
 				if ( isset($_POST ["submitted"]) ) {
 
-				if (file_put_contents("info.json", $infoJson))
-					echo "JSON file created successfully";
-				else
-					echo "Error creating JSON file";
-			}
+					if (file_put_contents("info.json", $infoJson))
+						echo "JSON file created successfully";
+					else
+						echo "Error creating JSON file";
+				}
 				?></p>
 	</div>
 </section>
