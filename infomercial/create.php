@@ -17,6 +17,9 @@
 		$hasSpoke = false;
 		$hasFun = false;
 
+		//this must be null, setting to "" causes error when pushing values to array
+		$infoArray = null;
+
 
 			if ( isset($_POST ["submitted"]) ) {
 
@@ -25,7 +28,16 @@
 
 					if ( strlen($product) > 0) {
 						$hasProd = true;
-					} else {
+
+						$infoArray["product"] = $product;
+
+						// 3 ways to see array since echo won't work
+						// var_dump($infoArray);
+						// print_r($infoArray);
+						// print json_encode($infoArray);
+					} 
+
+						else {
 						$prodError = "Please add a product.";
 					}
 				}
@@ -35,14 +47,16 @@
 
 					if ( strlen($productType) > 0) {
 						$hasType = true;
-					} else {
+
+					 	// this allows you to append the existing associative array with a key value pair, rather than write over
+						$infoArray["productType"] = $productType;
+
+					}
+
+						else {
 						$typeError = "Please add a product type.";
 					}
 
-					if ($productType != "kitchen" Or "bathroom" Or "grooming" Or "electronics" ) {
-						$validType = "Please enter a valid product type.";
-						echo $validType;
-					}
 				}		
 
 				if ( isset($_POST["price"]) ) {
@@ -50,6 +64,8 @@
 
 					if ( $price > 0) {
 						$hasPrice = true;
+
+						$infoArray["price"] = $price;
 					}
 				}
 
@@ -58,6 +74,8 @@
 
 					if ( strlen($spokesperson) > 0) {
 						$hasSpoke = true;
+
+						$infoArray["spokesperson"] = $spokesperson;
 					}
 				}
 
@@ -66,21 +84,18 @@
 
 					if ( $funnyScale > 0) {
 						$hasFun = true;
+
+						$infoArray["funnyScale"] = $funnyScale;
 					}
 				}
 
 				if ($hasProd && $hasType && $hasPrice && $hasSpoke && $hasFun) {
-					echo "HAS ALL THE STUFF";
+					$id = mt_rand(100, 10000);
+					$infoArray["id"] = $id;
+					// encode $infoArray to json
+					$infoJson = json_encode($infoArray);
 				}
-
 			}
-
-			// need to check for duplicate product inputs and return message that product is already in database
-			// need to define maybe 5 product types and tell use product must be in one of those categories
-
-
-
-
 		?>	
 
 		<form method = "POST">
@@ -114,5 +129,12 @@
 			Add it to the site!
 			</button>
 		</form>
+
+						 <!-- write to json file (with error handling) -->
+				<p class="json-msg"><?php if (file_put_contents("info.json", $infoJson))
+					echo "JSON file created successfully";
+				else
+					echo "Error creating JSON file";
+				?></p>
 	</div>
 </section>
