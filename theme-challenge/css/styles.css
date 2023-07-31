@@ -20,7 +20,7 @@ body * {
 	padding: 10px;
 }
 
-picture, masthead, main-welcome, welcome-heading, welcome-text, main-action, action-heading, action-text, main-article, article-heading,
+picture, masthead, main-welcome, welcome-heading, welcome-text, welcome-block, main-action, action-heading, action-text, main-article, article-heading,
 	article-text, articles, card-text, card-heading, card-link, footer-block {
   display: block;
   /* inline by default (browser's choice) */
@@ -77,7 +77,7 @@ h6 {
 	margin-right: auto;
 }
 
-/* small screen */
+/* screen 1 */
 
 .page-content {
 	display: flex;
@@ -95,14 +95,19 @@ masthead nav {
 	flex-direction: row;
 }
 
-/*.hello-img {
+.hello-img {
 	max-width: 300px;
-}*/
+}
 
 main-welcome {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+}
+
+welcome-block {
+	display: flex;
+	flex-direction: column;
 }
 
 main-action {
@@ -117,9 +122,64 @@ main-action {
 }
 
 footer-block {
-	display: flex;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr;
 
 }
+
+/* screen 2 header */
+
+@media (min-width:700px){
+/*	.main-image {
+		width: 575px;
+	}*/
+
+	masthead {
+		flex-direction: row;
+	}
+}
+
+/* screen 2 welcome */
+
+@media (min-width:700px){
+	main-welcome {
+		flex-direction: row-reverse;
+	}
+
+	welcome-block {
+		justify-content: center;
+	}
+}
+
+/* screen 2 article list */
+
+@media (min-width: 700px){
+	.article-list {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr;
+	}
+}
+
+/* screen 2 footer */
+
+@media (min-width: 700px){
+	footer-block {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+/* screen 3 article list */
+@media (min-width: 950px){
+	.article-list {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr;
+	}
+
 
 /* FOOTER */
 .page-content {
