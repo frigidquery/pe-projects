@@ -131,10 +131,15 @@
 		</form>
 
 						 <!-- write to json file (with error handling) -->
-				<p class="json-msg"><?php if (file_put_contents("info.json", $infoJson))
+				<p class="json-msg"><?php 
+
+				if ( isset($_POST ["submitted"]) ) {
+
+				if (file_put_contents("info.json", $infoJson))
 					echo "JSON file created successfully";
 				else
 					echo "Error creating JSON file";
+			}
 				?></p>
 	</div>
 </section>
