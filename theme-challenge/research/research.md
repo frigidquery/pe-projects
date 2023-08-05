@@ -55,6 +55,11 @@ mixture by sections: history/lifetime
 - the usual social media junk that no one care about or clicks on
 - many have link to "parental guidelines"
 
+pt sans bold
+playfair display
+
+roboto
+cabin
 
 
 
