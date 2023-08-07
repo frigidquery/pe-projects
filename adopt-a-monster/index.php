@@ -31,7 +31,7 @@ top {
 
 card {
 	display: block;
-	background-color: blue ;
+	background-color: orange ;
 }
 
 </style>
