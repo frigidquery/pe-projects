@@ -5,12 +5,13 @@
 .button {
 	display: block;
 
-	font-family: sans-serif;
-	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
+	font-size: .875rem;
 	line-height: 1.4;
 
 	padding: 0.5em 1em;
-	background-color: var(--color);
-	min-width: 120px;
+	background-color: #920102;
+	min-width: 10em;
 	text-align: center;
+	border-radius: .75em;
 }

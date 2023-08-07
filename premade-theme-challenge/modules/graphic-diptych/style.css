@@ -5,6 +5,7 @@ graphic-diptych {
 	flex-direction: column;
 	gap: 30px;
 	padding: 10vh 0;
+	min-height: 100vh;
 }
 
 graphic-diptych p {
@@ -22,4 +23,15 @@ graphic-diptych p {
 	}
 }
 
-background-image: url(https://peprojects/alpha-7/joseph/)
+.welcome {
+	background-image: url("../../images/blue-dahlia.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.welcome inner-column {
+	border-top: 10px solid #920102;;
+	border-bottom: 10px solid #920102;;
+}
+

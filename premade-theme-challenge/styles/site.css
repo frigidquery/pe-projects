@@ -33,18 +33,23 @@ body {
 	color: var(--ink);
 }
 
+.sign-up, .get-involved {
+	background-color: white;
+	color: #222222;;
+}
+
 section:is(.sign-up, .get-involved) inner-column {
 	max-width: var(--tight);
 }
 
-section.get-involved {
+/*section.get-involved {
 	background-color: var(--highlight);
 }
 
 section.get-involved .button {
 	background-color: var(--ink);
 	color: var(--paper);
-}
+}*/
 
 /*@media (prefers-color-scheme: dark) {
 	section.sign-up {

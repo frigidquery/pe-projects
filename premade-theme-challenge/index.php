@@ -22,6 +22,10 @@
 			font-weight: 700;
 			margin-right: 2rem;
 		}
+		.article-card picture {
+			width: 100%;
+			height: 100%;
+		}
 
 
 
