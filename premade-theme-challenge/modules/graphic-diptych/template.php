@@ -6,9 +6,9 @@
 	</picture> -->
 	
 	<text-content>
-		<h1 class='loud-voice'>This is a graphic diptych</h1>
+		<h1 class='loud-voice'>Midnight Murmurs</h1>
 
-		<p>What a fun thing that we have here</p>
+		<p>In a dimly lit city, a cynical detective uncovers a tangled web of deceit, murder, and forbidden desires in pursuit of a deadly femme fatale.</p>
 
 		<title-button>
 		<a class='play-button' href='#'>Play Now</a>
