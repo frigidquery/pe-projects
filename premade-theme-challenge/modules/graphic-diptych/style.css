@@ -1,4 +1,3 @@
-
 graphic-diptych {
 	display: block;
 	display: flex;
@@ -31,7 +30,7 @@ graphic-diptych p {
 }
 
 .welcome inner-column {
-	border-top: 10px solid #920102;;
-	border-bottom: 10px solid #920102;;
+	border-top: 10px solid #920102;
+	border-bottom: 10px solid #920102;
 }
 
