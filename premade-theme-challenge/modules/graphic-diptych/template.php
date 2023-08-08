@@ -11,7 +11,7 @@
 		<p>What a fun thing that we have here</p>
 
 		<title-button>
-		<a class='button' href='#'>WATCH</a>
+		<a class='play-button' href='#'>Play Now</a>
 		</title-button>
 	</text-content>
 

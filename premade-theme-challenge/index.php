@@ -16,23 +16,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto:500" rel="stylesheet">
 	</head>
 
-	<style>
-		a {
-			font-size: 1.25rem;
-			font-weight: 700;
-			margin-right: 2rem;
-		}
-		.article-card picture {
-			width: 100%;
-			height: 100%;
-		}
-
-
-
-
-	</style>
-
-
 	<body>
 
 		<header id="top">

@@ -34,3 +34,7 @@ mast-head nav a:not(.home) {
 		align-items: center;
 	}
 }
+
+mast-head {
+	padding: 10px;
+}
