@@ -11,7 +11,9 @@
 		<p>In a dimly lit city, a cynical detective uncovers a tangled web of deceit, murder, and forbidden desires in pursuit of a deadly femme fatale.</p>
 
 		<title-button>
-		<a class='play-button' href='#'>Play Now</a>
+		<a href='#'>
+			<?php include('modules/sign-in.php'); ?>
+		</a>
 		</title-button>
 	</text-content>
 

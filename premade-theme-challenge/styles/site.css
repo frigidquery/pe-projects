@@ -39,7 +39,7 @@ body {
 }
 
 section:is(.sign-up, .get-involved) inner-column {
-	max-width: var(--tight);
+/*	max-width: var(--standard);*/
 }
 
 /*section.get-involved {
