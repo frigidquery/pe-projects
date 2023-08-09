@@ -11,8 +11,8 @@ html {
 
 	--corners: 10px; /* or whatevers */
 
-	--paper: var(--white);
-	--ink: var(--black);
+	--paper: #231a1a;
+	--ink: #ffffe2;
 
 	--standard: 1140px;
 	--tight: 800px;
