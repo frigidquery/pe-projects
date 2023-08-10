@@ -5,7 +5,7 @@
 <call-to-action>
 	<h2 class='heading attention-voice'>FREE THIS WEEK</h2>
 
-	<p class='story'>Here's a sample of some shows you might enjoy before subscribing.</p>
+	<p class='story'>Select episodes, no sign in required</p>
 
 	<!-- <a class='button' href='#'>Call to Action</a> -->
 
@@ -32,7 +32,9 @@
 								</title-text>
 
 								<title-button>
-									<a class='play-button' href='#'>Play Now</a>
+									<a href='#'>
+										<?php include('modules/play.php'); ?>
+									</a>
 								</title-button>
 							</text-content>
 

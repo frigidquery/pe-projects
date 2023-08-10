@@ -27,6 +27,49 @@
 	height: 100%;
 }
 
+.article-card text-content {
+	min-height: 30vh;
+	margin-top: 20px;
+
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.article-card text-content title-text, .article-card text-content title-button  {
+		padding: 0.5rem;
+		z-index: 5;
+		color: white;
+	}
+
+.article-card text-content title-text {
+		background-image: linear-gradient(180deg, rgba(0,0,0,0.6) 10%, transparent 100%);
+
+	}
+
+	.article-card {
+	position: relative;
+	background-color: transparent;
+	padding: 5rem 0;
+}
+
+.article-card picture {
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+	}
+
+.article-card picture img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
 .latest inner-column:after {
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */

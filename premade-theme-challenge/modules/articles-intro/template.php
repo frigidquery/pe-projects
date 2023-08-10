@@ -3,9 +3,9 @@
 
 <articles-intro>
 	<header>
-		<h2 class='attention-voice'>Heading for this section here</h2>
+		<h2 class='attention-voice'>WATCH NOIRVIEWTV</h2>
 
-		<p>A short introduction explaining why these articles are here to help you understand if you want to read them.</p>
+		<p>Do you get NoirViewTV at home? Watch full-length movies using your account information from your cable or satellite provider.</p>
 	</header>
 
 	<article-grid>

@@ -29,6 +29,11 @@ graphic-diptych p {
 	background-repeat: no-repeat;
 }
 
+text-content a{
+	width: 180px;
+	padding-top: 20px;
+}
+
 
 /*this is how you create a border that is less than the lenght of the box*/
 .welcome inner-column:after {

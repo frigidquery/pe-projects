@@ -18,7 +18,9 @@
 		</title-text>
 
 		<title-button>
-		<a class='play-button' href='#'>Play Now</a>
+		<a href='#'>
+			<?php include('modules/play.php'); ?>
+		</a>
 		</title-button>
 	</text-content>
 
